@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Karo Pitch</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* GLOBAL */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f6fb;
+color:#333;
+}
+
+/* NAVBAR */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#ff6b00;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+nav a:hover{
+color:#ff6b00;
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(135deg,#ff6b00,#ff914d);
+color:white;
+text-align:center;
+padding:140px 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:35px;
+}
+
+/* BUTTON */
+
+.btn{
+padding:14px 30px;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+margin:5px;
+transition:0.3s;
+}
+
+.btn-primary{
+background:white;
+color:#ff6b00;
+font-weight:600;
+}
+
+.btn-primary:hover{
+transform:scale(1.05);
+}
+
+.btn-secondary{
+background:#222;
+color:white;
+}
+
+.btn-secondary:hover{
+background:black;
+}
+
+/* SECTION */
+
+section{
+padding:90px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:34px;
+margin-bottom:60px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+/* CARDS */
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+transition:0.3s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 40px rgba(0,0,0,0.1);
+}
+
+.card i{
+font-size:38px;
+color:#ff6b00;
+margin-bottom:15px;
+}
+
+/* STARTUPS */
+
+.startup-card{
+text-align:left;
+}
+
+.startup-card h3{
+margin-bottom:10px;
+}
+
+/* INVESTOR SLIDER */
+
+.slider{
+display:flex;
+overflow:hidden;
+}
+
+.slide-track{
+display:flex;
+animation:scroll 20s linear infinite;
+}
+
+.slide{
+height:80px;
+width:200px;
+background:white;
+margin:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+font-weight:bold;
+}
+
+@keyframes scroll{
+0%{transform:translateX(0);}
+100%{transform:translateX(-50%);}
+}
+
+/* FORM */
+
+.pitch-form{
+max-width:600px;
+margin:auto;
+background:white;
+padding:35px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.form-group{
+margin-bottom:20px;
+}
+
+.form-group label{
+display:block;
+margin-bottom:6px;
+font-weight:600;
+}
+
+.form-group input,
+.form-group select{
+width:100%;
+padding:10px;
+border:1px solid #ddd;
+border-radius:6px;
+}
+
+/* DARK SECTION */
+
+.dark{
+background:#1c1c1c;
+color:white;
+}
+
+/* CTA */
+
+.cta{
+background:linear-gradient(135deg,#ff6b00,#ff914d);
+color:white;
+text-align:center;
+padding:100px 20px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:32px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+
+<div class="logo">Karo Pitch</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#how">How It Works</a>
+<a href="#investors">Investors</a>
+<a href="#startups">Startups</a>
+<a href="#apply">Apply</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Pitch Your Startup to India’s Top Investors</h1>
+
+<p>Founders from across India can pitch their startups and raise funding through Karo Pitch.</p>
+
+<button class="btn btn-primary">Apply to Pitch</button>
+
+<button class="btn btn-secondary">Explore Startups</button>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">About Karo Pitch</h2>
+
+<p style="text-align:center;max-width:850px;margin:auto;font-size:18px;">
+
+Thousands of founders are building amazing businesses but lack access to investors.
+Karo Pitch connects founders with investors through curated pitch events and a startup discovery platform designed to empower Bharat founders.
+
+</p>
+
+</section>
+
+<!-- HOW IT WORKS -->
+
+<section id="how">
+
+<h2 class="section-title">How It Works</h2>
+
+<div class="grid">
+
+<div class="card">
+<i class="fa-solid fa-file"></i>
+<h3>Apply</h3>
+<p>Submit your pitch deck and startup details.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-check-circle"></i>
+<h3>Shortlisting</h3>
+<p>KaroStartup reviews promising startups.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-microphone"></i>
+<h3>Pitch</h3>
+<p>Pitch live in front of investors.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-chart-line"></i>
+<h3>Raise Funding</h3>
+<p>Secure investment and scale your business.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- WHO CAN APPLY -->
+
+<section>
+
+<h2 class="section-title">Who Can Apply</h2>
+
+<div class="grid">
+
+<div class="card">D2C Brands</div>
+<div class="card">Consumer Startups</div>
+<div class="card">MSMEs</div>
+<div class="card">SaaS Startups</div>
+<div class="card">Manufacturing Businesses</div>
+<div class="card">Bharat Focused Startups</div>
+
+</div>
+
+</section>
+
+<!-- INVESTOR SLIDER -->
+
+<section id="investors">
+
+<h2 class="section-title">Meet Investors Looking for the Next Big Startup</h2>
+
+<div class="slider">
+
+<div class="slide-track">
+
+<div class="slide">Investor</div>
+<div class="slide">Investor</div>
+<div class="slide">Investor</div>
+<div class="slide">Investor</div>
+<div class="slide">Investor</div>
+<div class="slide">Investor</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURED STARTUPS -->
+
+<section id="startups">
+
+<h2 class="section-title">Featured Startups</h2>
+
+<div class="grid">
+
+<div class="card startup-card">
+<h3>EcoCart</h3>
+<p><b>Category:</b> D2C</p>
+<p>Sustainable e-commerce helping reduce plastic waste.</p>
+</div>
+
+<div class="card startup-card">
+<h3>AgriBoost</h3>
+<p><b>Category:</b> Agriculture</p>
+<p>Technology platform empowering farmers.</p>
+</div>
+
+<div class="card startup-card">
+<h3>CloudLedger</h3>
+<p><b>Category:</b> SaaS</p>
+<p>Smart accounting platform for MSMEs.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- INVESTOR DASHBOARD -->
+
+<section>
+
+<h2 class="section-title">Investor Dashboard</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Total Startups</h3>
+<p style="font-size:28px;font-weight:bold;">120+</p>
+</div>
+
+<div class="card">
+<h3>Live Pitches</h3>
+<p style="font-size:28px;font-weight:bold;">15</p>
+</div>
+
+<div class="card">
+<h3>Funding Raised</h3>
+<p style="font-size:28px;font-weight:bold;">₹25 Cr+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- APPLICATION FORM -->
+
+<section id="apply">
+
+<h2 class="section-title">Apply to Pitch Your Startup</h2>
+
+<form class="pitch-form">
+
+<div class="form-group">
+<label>Founder Name</label>
+<input type="text" placeholder="Enter your name">
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" placeholder="Enter your email">
+</div>
+
+<div class="form-group">
+<label>Startup Name</label>
+<input type="text" placeholder="Startup name">
+</div>
+
+<div class="form-group">
+<label>Category</label>
+
+<select>
+
+<option>D2C</option>
+<option>SaaS</option>
+<option>MSME</option>
+<option>Consumer Startup</option>
+<option>Manufacturing</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+<label>Upload Pitch Deck</label>
+<input type="file">
+</div>
+
+<button class="btn btn-primary">Submit Application</button>
+
+</form>
+
+</section>
+
+<!-- ABOUT KAROSTARTUP -->
+
+<section class="dark">
+
+<h2 class="section-title">About KaroStartup</h2>
+
+<p style="text-align:center;max-width:850px;margin:auto;font-size:18px;">
+
+KaroStartup is one of India's largest startup storytelling platforms,
+sharing thousands of founder journeys and inspiring entrepreneurs across the country.
+
+</p>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Ready to Pitch Your Startup?</h2>
+
+<br>
+
+<button class="btn btn-primary">Apply Now</button>
+
+<button class="btn btn-secondary">Partner With Us</button>
+
+</section>
+
+<footer>
+
+© 2026 Karo Pitch | Powered by KaroStartup
+
+</footer>
+
+</body>
+
+</html>

@@ -161,9 +161,3 @@ Example:
 ## Author
 
 Arti Kolhe
-
----
-
-## Assignment
-
-This project was created as part of the **Karo Pitch Intern Assignment by KaroStartup** to demonstrate product thinking, creativity, and ability to build a startup landing page using modern web design principles.

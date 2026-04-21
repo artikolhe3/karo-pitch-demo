@@ -14,8 +14,7 @@ The goal of this project was to design a **modern, clean, and investor-focused h
 
 View the live demo here:
 
-https://yourusername.github.io/karo-pitch-demo
-
+https://artikolhe3.github.io/karo-pitch-demo/
 ---
 
 ## Features
